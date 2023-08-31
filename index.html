@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+    <header class="topic">Currency Converter</header>
+    <section class="main-section">
+       <div class="wrapper"> 
+
+        <div class="firstValue">
+
+            <div class="selectValue">Select Base Currency</div>
+            <div class="firstCurrency">
+                <button data-currency ='RUB' class="RUB">RUB</button>
+                <button data-currency ='USD'class="USD">USD</button>
+                <button data-currency ='EUR'class="EUR">EUR</button>
+                <button data-currency ='GBP'class="GBP">GBP</button>
+                <button class="otherValue"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
+                    <path d="M440 168L232 376c-9.4 9.4-24.6 9.4-33.9 0L8 168C-1.5 158.6-1.5 143.4 8 134.1c18.8-18.8 49.1-18.8 67.9 0L224 297.2l148.1-163.1c18.8-18.8 49.1-18.8 67.9 0 9.5 9.3 9.5 24.5 0 33.9z" fill="#ffffff" stroke-width="1" />
+                  </svg></button>
+                <div class="popup-menu">
+                  <div>
+                    <button data-currency="RUB"><div class="wrapper-text">Russian Ruble</div>
+                        <span>RUB</span>
+                    </button>
+                    <button data-currency="USD"><div class="wrapper-text">US Dollar</div>
+                        <span>USD</span>
+                    </button>
+                    <button data-currency="EUR"><div class="wrapper-text">Euro</div>
+                        <span>EUR</span>
+                    </button>
+                    <button data-currency="GBP"><div class="wrapper-text">British Pound</div>
+                        <span>GBP</span>
+                    </button>
+                    <button data-currency="AUD"><div class="wrapper-text">Australian Dollar</div>
+                        <span>AUD</span>
+                    </button>
+                    <button data-currency="AZN"><div class="wrapper-text">Azerbaijani Manat</div>
+                        <span>AZN</span>
+                    </button>
+                    <button data-currency="AMD"><div class="wrapper-text">Armenian Dram</div>
+                        <span>AMD</span>
+                    </button>
+                    <button data-currency="BYN"><div class="wrapper-text">Belarusian Ruble</div>
+                        <span>BYN</span>
+                    </button>
+                    <button data-currency="BGN"><div class="wrapper-text">Bulgarian Lev</div>
+                        <span>BGN</span>
+                    </button>
+                    <button data-currency="BRL"><div class="wrapper-text">Brazilian Real</div>
+                        <span>BRL</span>
+                    </button>
+                    <button data-currency="HUF"><div class="wrapper-text">Hungarian Forint</div>
+                        <span>HUF</span>
+                    </button>
+                </div>
+                <div>
+                    <button data-currency="KRW"><div class="wrapper-text">South Korean Won</div>
+                        <span>KRW</span>
+                    </button>
+                    <button data-currency="DKK"><div class="wrapper-text">Danish Krone</div>
+                        <span>DKK</span>
+                    </button>
+                    <button data-currency="INR"><div class="wrapper-text">Indian Rupee</div>
+                        <span>INR</span>
+                    </button>
+                    <button data-currency="KZT"><div class="wrapper-text">Kazakhstani Tenge</div>
+                        <span>KZT</span>
+                    </button>
+                    <button data-currency="CAD"><div class="wrapper-text">Canadian Dollar</div>
+                        <span>CAD</span>
+                    </button>
+                    <button data-currency="KGS"><div class="wrapper-text">Kyrgyzstani Som</div>
+                        <span>KGS</span>
+                    </button>
+                    <button data-currency="CNY"><div class="wrapper-text">Chinese Yuan</div>
+                        <span>CNY</span>
+                    </button>
+                    <button data-currency="MDL"><div class="wrapper-text">Moldovan Leu</div>
+                        <span>MDL</span>
+                    </button>
+                    <button data-currency="RON"><div class="wrapper-text">Romanian Leu</div>
+                        <span>RON</span>
+                    </button>
+                    <button data-currency="TMT"><div class="wrapper-text">Turkmenistani Manat</div>
+                        <span>TMT</span>
+                    </button>
+                    <button data-currency="NOK"><div class="wrapper-text">Norwegian Krone</div>
+                        <span>NOK</span>
+                    </button>
+                </div>
+                <div>
+                    <button data-currency="PLN"><div class="wrapper-text">Polish Złoty</div>
+                        <span>PLN</span>
+                    </button>
+                    <button data-currency="SGD"><div class="wrapper-text">Singapore Dollar</div>
+                        <span>SGD</span>
+                    </button>
+                    <button data-currency="TJS"><div class="wrapper-text">Tajikistani Somoni</div>
+                        <span>TJS</span>
+                    </button>
+                    <button data-currency="TRY"><div class="wrapper-text">Turkish Lira</div>
+                        <span>TRY</span>
+                    </button>
+                    <button data-currency="UZS"><div class="wrapper-text">Uzbekistani Som</div>
+                        <span>UZS</span>
+                    </button>
+                    <button data-currency="UAH"><div class="wrapper-text">Ukrainian Hryvnia</div>
+                        <span>UAH</span>
+                    </button>
+                    <button data-currency="CZK"><div class="wrapper-text">Czech Koruna</div>
+                        <span>CZK</span>
+                    </button>
+                    <button data-currency="SEK"><div class="wrapper-text">Swedish Krona</div>
+                        <span>SEK</span>
+                    </button>
+                    <button data-currency="CHF"><div class="wrapper-text">Swiss Franc</div>
+                        <span>CHF</span>
+                    </button>
+                    <button data-currency="ZAR"><div class="wrapper-text">South African Rand</div>
+                        <span>ZAR</span>
+                    </button>
+                    <button data-currency="JPY"><div class="wrapper-text">Japanese Yen</div>
+                        <span>JPY</span>
+                    </button>
+                </div>
+                </div>
+            </div>
+            <input type="number" id="amount"  class="no-spin">
+       </div>
+       <div class="secondValue">
+        <div class="selectTarget">Select Target Currency</div>
+        <div class="secondCurrency">
+
+            <button data="RUB" class="RUB">RUB</button>
+            <button data="USD"class="USD">USD</button>
+            <button data="EUR"class="EUR">EUR</button>
+            <button data="GBP"class="GBP">GBP</button>
+            <button class="secondOtherValue"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
+                <path d="M440 168L232 376c-9.4 9.4-24.6 9.4-33.9 0L8 168C-1.5 158.6-1.5 143.4 8 134.1c18.8-18.8 49.1-18.8 67.9 0L224 297.2l148.1-163.1c18.8-18.8 49.1-18.8 67.9 0 9.5 9.3 9.5 24.5 0 33.9z" fill="#ffffff" stroke-width="1" />
+              </svg></button>
+            <div class="secPopup-menu">
+                <div>
+                  <button data="RUB"><div class="wrapper-text">Russian Ruble</div>
+                      <span>RUB</span>
+                  </button>
+                  <button data="USD"><div class="wrapper-text">US Dollar</div>
+                      <span>USD</span>
+                  </button>
+                  <button data="EUR"><div class="wrapper-text">Euro</div>
+                      <span>EUR</span>
+                  </button>
+                  <button data="GBP"><div class="wrapper-text">British Pound</div>
+                      <span>GBP</span>
+                  </button>
+                  <button data="AUD"><div class="wrapper-text">Australian Dollar</div>
+                      <span>AUD</span>
+                  </button>
+                  <button data="AZN"><div class="wrapper-text">Azerbaijani Manat</div>
+                      <span>AZN</span>
+                  </button>
+                  <button data="AMD"><div class="wrapper-text">Armenian Dram</div>
+                      <span>AMD</span>
+                  </button>
+                  <button data="BYN"><div class="wrapper-text">Belarusian Ruble</div>
+                      <span>BYN</span>
+                  </button>
+                  <button data="BGN"><div class="wrapper-text">Bulgarian Lev</div>
+                      <span>BGN</span>
+                  </button>
+                  <button data="BRL"><div class="wrapper-text">Brazilian Real</div>
+                      <span>BRL</span>
+                  </button>
+                  <button data="HUF"><div class="wrapper-text">Hungarian Forint</div>
+                      <span>HUF</span>
+                  </button>
+              </div>
+              <div>
+                  <button data="KRW"><div class="wrapper-text">South Korean Won</div>
+                      <span>KRW</span>
+                  </button>
+                  <button data="DKK"><div class="wrapper-text">Danish Krone</div>
+                      <span>DKK</span>
+                  </button>
+                  <button data="INR"><div class="wrapper-text">Indian Rupee</div>
+                      <span>INR</span>
+                  </button>
+                  <button data="KZT"><div class="wrapper-text">Kazakhstani Tenge</div>
+                      <span>KZT</span>
+                  </button>
+                  <button data="CAD"><div class="wrapper-text">Canadian Dollar</div>
+                      <span>CAD</span>
+                  </button>
+                  <button data="KGS"><div class="wrapper-text">Kyrgyzstani Som</div>
+                      <span>KGS</span>
+                  </button>
+                  <button data="CNY"><div class="wrapper-text">Chinese Yuan</div>
+                      <span>CNY</span>
+                  </button>
+                  <button data="MDL"><div class="wrapper-text">Moldovan Leu</div>
+                      <span>MDL</span>
+                  </button>
+                  <button data="RON"><div class="wrapper-text">Romanian Leu</div>
+                      <span>RON</span>
+                  </button>
+                  <button data="TMT"><div class="wrapper-text">Turkmenistani Manat</div>
+                      <span>TMT</span>
+                  </button>
+                  <button data="NOK"><div class="wrapper-text">Norwegian Krone</div>
+                      <span>NOK</span>
+                  </button>
+              </div>
+              <div>
+                  <button data="PLN"><div class="wrapper-text">Polish Złoty</div>
+                      <span>PLN</span>
+                  </button>
+                  <button data="SGD"><div class="wrapper-text">Singapore Dollar</div>
+                      <span>SGD</span>
+                  </button>
+                  <button data="TJS"><div class="wrapper-text">Tajikistani Somoni</div>
+                      <span>TJS</span>
+                  </button>
+                  <button data="TRY"><div class="wrapper-text">Turkish Lira</div>
+                      <span>TRY</span>
+                  </button>
+                  <button data="UZS"><div class="wrapper-text">Uzbekistani Som</div>
+                      <span>UZS</span>
+                  </button>
+                  <button data="UAH"><div class="wrapper-text">Ukrainian Hryvnia</div>
+                      <span>UAH</span>
+                  </button>
+                  <button data="CZK"><div class="wrapper-text">Czech Koruna</div>
+                      <span>CZK</span>
+                  </button>
+                  <button data="SEK"><div class="wrapper-text">Swedish Krona</div>
+                      <span>SEK</span>
+                  </button>
+                  <button data="CHF"><div class="wrapper-text">Swiss Franc</div>
+                      <span>CHF</span>
+                  </button>
+                  <button data="ZAR"><div class="wrapper-text">South African Rand</div>
+                      <span>ZAR</span>
+                  </button>
+                  <button data="JPY"><div class="wrapper-text">Japanese Yen</div>
+                      <span>JPY</span>
+                  </button>
+              </div>
+              </div>
+        </div>
+        
+        <div class="result"></div>
+        
+       </div>
+      
+            
+           
+        </div>
+      
+
+</section>
+    <script src="./money.js-master/money.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
